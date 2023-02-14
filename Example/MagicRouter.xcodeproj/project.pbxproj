@@ -15,6 +15,8 @@
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		7E93EE9187125576830DB415 /* Pods_MagicRouter_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9ED23CA20C5BF65D9775F87E /* Pods_MagicRouter_Tests.framework */; };
 		CC9360411D627E5EF5FEE8D8 /* Pods_MagicRouter_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B40F1942426ECC97AC0BA881 /* Pods_MagicRouter_Example.framework */; };
+		CEBFFD07299B40C800BC0F8C /* MagicRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBFFD06299B40C800BC0F8C /* MagicRouter.swift */; };
+		CEBFFD09299B413B00BC0F8C /* MagicExtensionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBFFD08299B413B00BC0F8C /* MagicExtensionController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,10 +30,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1EB7C4756687C340518F8972 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		1EB7C4756687C340518F8972 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		1FB55DE064344BD8F02E26F7 /* Pods-MagicRouter_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MagicRouter_Example.debug.xcconfig"; path = "Target Support Files/Pods-MagicRouter_Example/Pods-MagicRouter_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		2E2455BD1220F0D554FF73E1 /* Pods-MagicRouter_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MagicRouter_Tests.release.xcconfig"; path = "Target Support Files/Pods-MagicRouter_Tests/Pods-MagicRouter_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		50ACD703C49A55A92649E30F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		50ACD703C49A55A92649E30F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* MagicRouter_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MagicRouter_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -42,10 +44,12 @@
 		607FACE51AFB9204008FA782 /* MagicRouter_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MagicRouter_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		6C2C6506438B45CD25C635FF /* MagicRouter.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = MagicRouter.podspec; path = ../MagicRouter.podspec; sourceTree = "<group>"; };
+		6C2C6506438B45CD25C635FF /* MagicRouter.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MagicRouter.podspec; path = ../MagicRouter.podspec; sourceTree = "<group>"; };
 		9ED23CA20C5BF65D9775F87E /* Pods_MagicRouter_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MagicRouter_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAF0C773F119880AC3DF7C96 /* Pods-MagicRouter_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MagicRouter_Example.release.xcconfig"; path = "Target Support Files/Pods-MagicRouter_Example/Pods-MagicRouter_Example.release.xcconfig"; sourceTree = "<group>"; };
 		B40F1942426ECC97AC0BA881 /* Pods_MagicRouter_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MagicRouter_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEBFFD06299B40C800BC0F8C /* MagicRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicRouter.swift; sourceTree = "<group>"; };
+		CEBFFD08299B413B00BC0F8C /* MagicExtensionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicExtensionController.swift; sourceTree = "<group>"; };
 		FFC7BE0CAC5199D6B09988CD /* Pods-MagicRouter_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MagicRouter_Tests.debug.xcconfig"; path = "Target Support Files/Pods-MagicRouter_Tests/Pods-MagicRouter_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -86,7 +90,6 @@
 				FFC7BE0CAC5199D6B09988CD /* Pods-MagicRouter_Tests.debug.xcconfig */,
 				2E2455BD1220F0D554FF73E1 /* Pods-MagicRouter_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -116,6 +119,7 @@
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				CEBFFD05299B408F00BC0F8C /* Classes */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -158,6 +162,15 @@
 				1EB7C4756687C340518F8972 /* LICENSE */,
 			);
 			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		CEBFFD05299B408F00BC0F8C /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				CEBFFD06299B40C800BC0F8C /* MagicRouter.swift */,
+				CEBFFD08299B413B00BC0F8C /* MagicExtensionController.swift */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -227,6 +240,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -332,7 +346,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				CEBFFD07299B40C800BC0F8C /* MagicRouter.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				CEBFFD09299B413B00BC0F8C /* MagicExtensionController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,7 +435,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -465,7 +481,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -484,7 +500,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -499,7 +515,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
