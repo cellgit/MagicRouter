@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'MagicRouter_Example' do
+  pod 'MagicRouter', :path => '../'
+
+  target 'MagicRouter_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
