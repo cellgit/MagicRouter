@@ -119,7 +119,7 @@ private extension MagicRouter {
 }
 
 //MARK: - OtherAction(适用于模块在主工程,私有库或公有库的情况,模块在主工程中同样适用)
-public extension MyRouter {
+public extension MagicRouter {
     /**
      通过类名获取一个类
      
