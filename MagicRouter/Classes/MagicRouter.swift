@@ -118,8 +118,8 @@ private extension MagicRouter {
     }
 }
 
-//MARK: - OtherAction
-public extension MagicRouter {
+//MARK: - OtherAction(适用于模块在主工程,私有库或公有库的情况,模块在主工程中同样适用)
+public extension MyRouter {
     /**
      通过类名获取一个类
      
@@ -130,12 +130,40 @@ public extension MagicRouter {
         var frameworksUrl = Bundle.main.url(forResource: "Frameworks", withExtension: nil)
         frameworksUrl = frameworksUrl?.appendingPathComponent(moudleName)
         frameworksUrl = frameworksUrl?.appendingPathExtension("framework")
-
         guard let bundleUrl = frameworksUrl else { return nil }
         guard let bundleName = Bundle(url: bundleUrl)?.infoDictionary?["CFBundleName"] as? String  else {
-            return nil
+            if let mainBundleName = Bundle.main.infoDictionary?["CFBundleName"] as? String,
+               let clsName = NSClassFromString(mainBundleName + "." + className) {
+                return clsName
+            }
+            else {
+                return nil
+            }
         }
-        
         return NSClassFromString(bundleName + "." + className)
     }
+    
 }
+
+
+////MARK: - OtherAction(适用于模块在纯私有库或公有库的情况,模块在主工程中则不适用)
+//public extension MagicRouter {
+//    /**
+//     通过类名获取一个类
+//
+//     - parameter moudleName: 模块名称
+//     - parameter className: 类名称
+//     */
+//    class func moudleAnyClass(_ moudleName: String, className: String) -> AnyClass? {
+//        var frameworksUrl = Bundle.main.url(forResource: "Frameworks", withExtension: nil)
+//        frameworksUrl = frameworksUrl?.appendingPathComponent(moudleName)
+//        frameworksUrl = frameworksUrl?.appendingPathExtension("framework")
+//
+//        guard let bundleUrl = frameworksUrl else { return nil }
+//        guard let bundleName = Bundle(url: bundleUrl)?.infoDictionary?["CFBundleName"] as? String  else {
+//            return nil
+//        }
+//
+//        return NSClassFromString(bundleName + "." + className)
+//    }
+//}
