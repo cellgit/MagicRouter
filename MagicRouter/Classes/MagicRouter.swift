@@ -74,6 +74,10 @@ public extension MagicRouter {
      - returns: 返回一个 UIViewController 控制器
      */
     func viewController(_ url: String, parameters: [String : Any]? = nil, callBackParameters: (([String: Any]) -> Void)? = nil) -> UIViewController? {
+        if let de = decoudeUrl(url) {
+            debugPrint("decoudeUrl\(de) =====2 \(moudleDic[de.scheme]) ==== \(schemeDic[de.scheme]?[de.path])")
+        }
+        
         guard let decoude = decoudeUrl(url),
               let moudle = moudleDic[decoude.scheme],
               let className = schemeDic[decoude.scheme]?[decoude.path] else {
@@ -127,6 +131,9 @@ public extension MagicRouter {
      - parameter className: 类名称
      */
     class func moudleAnyClass(_ moudleName: String, className: String) -> AnyClass? {
+        
+        debugPrint("moudleName ==== \(moudleName) ==== \(className)")
+        
         var frameworksUrl = Bundle.main.url(forResource: "Frameworks", withExtension: nil)
         frameworksUrl = frameworksUrl?.appendingPathComponent(moudleName)
         frameworksUrl = frameworksUrl?.appendingPathExtension("framework")
